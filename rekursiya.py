@@ -6,7 +6,7 @@ with open('maze-1.csv', 'r') as f:
     reader = csv.reader(f, delimiter=';')
     for row in reader:
         maze.append([int(char) for cell in row for char in cell])
-#jkenfkjsdffsfsafasfasf
+#jkenfkjsdffs
 def find_path(maze_new, v, d):
     if v == len(maze_new)-2 and d == len(maze_new[0])-2:
         maze_new[v][d] = 'f'
