@@ -31,7 +31,7 @@ def solve_maze(maze, x, y, path):
 
     return False
 # Read the maze from a CSV file
-with open('maze-1.csv') as csvfile:
+with open('../maze-1.csv') as csvfile:
     data = list(csv.reader(csvfile, delimiter=';'))
     maze = [[int(cell) for cell in row] for row in data]
 

@@ -2,7 +2,7 @@ import csv
 
 maze = []
 DIRS=((1, 0), (0, 1), (-1, 0), (0, -1))
-with open('maze-1.csv', 'r') as f:
+with open('../maze-1.csv', 'r') as f:
     reader = csv.reader(f, delimiter=';')
     for row in reader:
         maze.append([int(char) for cell in row for char in cell])
